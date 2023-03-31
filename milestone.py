@@ -4,8 +4,8 @@ from tabulate import tabulate
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
-data = pd.read_csv("C:/Users/caozi/Desktop/TDI/Milestone project/Value_of_Energy_Cost_Savings_Program_Savings_for_Businesses_-_FY2020.csv")
+url = 'https://github.com/zcao92/binder-framework/blob/master/Value_of_Energy_Cost_Savings_Program_Savings_for_Businesses_-_FY2020.csv'
+data = pd.read_csv(url)
 
 # 1. How many different companies are represented in the data set?
 company_counts = data["Company Name"].nunique()
